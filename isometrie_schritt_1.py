@@ -5,9 +5,6 @@ from tkinter.scrolledtext import ScrolledText
 import pandas as pd
 from openpyxl import load_workbook
 
-# Definiere den Pfad zu den Excel-Dateien
-path = r"K:\Team\Böhmer_Michael\ISO_1"
-
 # Liste der benötigten Arbeitsblätter
 required_sheets = [
     "Isometr_Kon_Exz_60_5_Links",
@@ -151,7 +148,6 @@ def excel_dateien_verarbeiten(file_path, file_name, text_widget):
     return data
 
 
-
 # Hauptausführungsblock
 def datenverarbeitung_steuern_und_speichern(text_widget):
     # Alle Dateien im Verzeichnis verarbeiten und Ergebnisse speichern
@@ -230,5 +226,6 @@ def main():
 # Hauptprogramm starten
 if __name__ == "__main__":
     main()
+
 
 

@@ -7,9 +7,6 @@ def process_excel(file_path):
     # Definiere eine rote Füllfarbe für "nachbearbeiten"
     red_fill = PatternFill(start_color='FF0000', end_color='FF0000', fill_type='solid')
 
-    # Definiere eine gelbe Füllfarbe für Zahlenwert-Bedingungen
-    yellow_fill = PatternFill(start_color='FFFF00', end_color='FFFF00', fill_type='solid')
-
     # Lade die Arbeitsmappe und bearbeite sie
     try:
         wb = openpyxl.load_workbook(file_path)
@@ -82,7 +79,6 @@ def main():
     # Starte die GUI
     root.mainloop()
 
-# Überprüfe, ob das Skript direkt ausgeführt wird, und starte dann die GUI
 if __name__ == "__main__":
     main()
 
