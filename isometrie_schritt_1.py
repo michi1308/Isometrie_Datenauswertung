@@ -54,7 +54,7 @@ def excel_dateien_verarbeiten(file_path, file_name, text_widget):
             data['Name'] = sheet["A2"].value if sheet["A2"].value else "n.a."
             data['ID'] = sheet["B2"].value if sheet["B2"].value else "n.a."
         else:
-            output_to_widget(text, widget, f"{file_name}: Das Arbeitsblatt 'Wiederholungen' fehlt.")
+            output_to_widget(text_widget, f"{file_name}: Das Arbeitsblatt 'Wiederholungen' fehlt.")
 
         # Überprüfe jedes erforderliche Arbeitsblatt und finde die maximalen Werte
         for sheet_name in required_sheets:
